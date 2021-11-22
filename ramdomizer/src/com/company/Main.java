@@ -13,7 +13,6 @@ public class Main {
             int[] tiket= new int[number];
             for(int i=0; i<number; i++){
                int temporary=(int)(Math.random()*number+1);
-
                for(int j=i;j>=0;j--) {
                    if (temporary == tiket[j]) {
                        i--;
@@ -23,7 +22,10 @@ public class Main {
                }
             }
             System.out.println("В таком случае вот твои билеты:");
-            for(int i:tiket) System.out.print(i+" ");
+            for(int i:tiket) {
+                System.out.print(i + " ");
+
+            }
+            }
         }
     }
-}
